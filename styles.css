@@ -23,6 +23,18 @@ p{
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
+}
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: #3580db;
 
 }
 header{
