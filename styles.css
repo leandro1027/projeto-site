@@ -59,3 +59,22 @@ nav ul a{
     font-size: 14px;
     display: block;
 }
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+
+}
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+ 
+}
