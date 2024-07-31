@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@300;400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,24 +8,30 @@
     outline: none;
     font-family: "Inter", sans-serif;
 }
-body{
+
+body {
     background-color: #f1f6fc31;
 }
-section, footer{
+
+section, footer {
     padding: 54px 0;
 }
-h3{
+
+h3 {
     font-size: 50px;
 }
-p{
+
+p {
     color: #0000009c;
 }
-.container{
+
+.container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
 }
-.btn{
+
+.btn {
     background-color: #4f9cf9;
     color: white;
     padding: 15px 20px;
@@ -33,43 +40,53 @@ p{
     display: inline-block;
     transition: 0.1s;
 }
-.btn.animate-btn{
+
+.btn.animate-btn {
     animation: animate-outline 1s ease-out infinite;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #3580db;
 }
+
 @keyframes animate-outline {
-    from{
+    from {
         outline: 0px solid #4f9bf98a;
     }
-    to{
+
+    to {
         outline: 15px solid #4f9bf900;
     }
 }
-header{
+
+header {
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
 }
-nav ul a{
+
+nav ul a {
     color: white;
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
 }
-nav ul a:not(.btn):after{  /*tracinho em baixo do texto do nav, o not exclui pra não aparecer no btn*/
+
+nav ul a:not(.btn):after {
+    /*tracinho em baixo do texto do nav, o not exclui pra não aparecer no btn*/
     content: "";
     background-color: #4f9cf9;
     height: 3px;
@@ -78,24 +95,29 @@ nav ul a:not(.btn):after{  /*tracinho em baixo do texto do nav, o not exclui pra
     margin: 0 auto;
     transition: 0.3s;
 }
-nav ul a:hover::after{
+
+nav ul a:hover::after {
     width: 100%;
 }
-.banner{
+
+.banner {
     display: flex;
     justify-content: center;
 }
-.banner .banner-text{
+
+.banner .banner-text {
     margin: 150px;
     text-align: center;
     padding: 0 90px;
 }
-.banner .banner-text h1{
+
+.banner .banner-text h1 {
     font-size: 96px;
     color: white;
 
 }
-.banner .banner-text p{
+
+.banner .banner-text p {
     font-size: 20px;
     color: #ffffffb7;
     font-weight: lighter;
