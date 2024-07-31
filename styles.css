@@ -59,6 +59,18 @@ nav ul a{
     font-size: 14px;
     display: block;
 }
+nav ul a::after{
+    content: "";
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
 .banner{
     display: flex;
     justify-content: center;
@@ -76,5 +88,7 @@ nav ul a{
 .banner .banner-text p{
     font-size: 20px;
     color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
  
 }
