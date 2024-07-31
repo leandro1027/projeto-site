@@ -69,7 +69,7 @@ nav ul a{
     font-size: 14px;
     display: block;
 }
-nav ul a:not(.btn):after{
+nav ul a:not(.btn):after{  /*tracinho em baixo do texto do nav, o not exclui pra não aparecer no btn*/
     content: "";
     background-color: #4f9cf9;
     height: 3px;
