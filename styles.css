@@ -33,9 +33,19 @@ p{
     display: inline-block;
     transition: 0.1s;
 }
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
 .btn:hover{
     background-color: #3580db;
-
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
 }
 header{
     background-position: center;
@@ -59,9 +69,9 @@ nav ul a{
     font-size: 14px;
     display: block;
 }
-nav ul a::after{
+nav ul a:not(.btn):after{
     content: "";
-    background-color: red;
+    background-color: #4f9cf9;
     height: 3px;
     width: 0%;
     display: block;
@@ -90,5 +100,4 @@ nav ul a:hover::after{
     color: #ffffffb7;
     font-weight: lighter;
     margin: 18px 0;
- 
 }
